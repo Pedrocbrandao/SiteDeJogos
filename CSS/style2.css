@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+
+body{
+    margin: 0;
+    height: 100%;
+    background: #222;
+}
+
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background: #333;
+    border-bottom: 2px solid rgb(110, 110, 206);
+    box-shadow: 4px 4px 15px;
+    position: absolute;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.logo{
+    margin-left: 2%;
+    flex:10%;
+    text-align: center;
+}
+
+.logo img{
+    height: 115px;
+    position: absolute;
+    top: -25px;
+    left: 50px;
+}
+
+
+.menu{
+  /* border: 1px solid red; */
+  flex: 70%;
+  text-align: left;
+}
+
+
+.dropdown{
+  position: absolute;
+  top: 2px;
+}
+
+nav ul{
+  display: inline-flex;
+  list-style: none;
+  font-family: 'Varela Round', sans-serif;
+}
+
+nav li{
+  width: 100px;
+  margin: 6px;
+  font-family: 'Varela Round', sans-serif;
+  padding: 15px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color:#fff;
+}
+
+nav li a:hover{
+  color:rgb(110, 110, 206);
+}
+
+.sub-menu-1 a:hover{
+  color:#fff;
+}
+
+.sub-menu-1{
+  display: none;
+}
+
+
+nav ul li:hover .sub-menu-1{
+  display: block;
+  position: absolute;
+  background-color: #333;
+  margin-top: 17px;
+  margin-left: -80px;
+  box-shadow: 4px 4px 15px rgb(110, 110, 206);
+}
+
+nav ul li:hover .sub-menu-1 ul{
+  display: block;
+}
+
+nav ul li:hover .sub-menu-1 ul li{
+  width: 140px;
+  border-radius: 10px;
+  transition: 0.7s;
+}
+
+nav ul li:hover .sub-menu-1 ul li:hover{
+  background-color: rgb(110, 110, 206);
+}
+
+.login{
+    flex: 10%;
+    margin-right: 3%;
+    transition: all 0.3s;
+}
+
+.social-icon {
+    position: absolute;
+    top: 8px;
+    right: 100px;
+    height: 46px;
+    width: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.45rem;
+    color: rgb(110, 110, 206);
+    border-radius: 50%;
+    border: 1px solid #444;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+  }
+  
+.social-icon:hover {
+    color: rgb(110, 110, 206);
+    border-color: rgb(110, 110, 206);
+}
+
+#search{
+    position: absolute;
+    left: 1100px;
+}
+
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    height: 640px;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid red; */
+}
+
+.banner1 img{
+  width: 100%;
+}
+
+.headlineimg{
+    flex:45%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.slide{
+    width: 500px;
+    height: 525px;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.4s;
+    cursor:default;
+}
+
+.slides{
+    display: flex;
+}
+
+.image img{
+    width: 500px;
+    height: 450px;
+}
+
+.slides h2{
+    color:#fff;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+#atual{
+    transition: all 2s;
+}
+
+.btn{
+    position: absolute;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 1.7em;
+}
+
+#voltar{
+    top:50%;
+    left:47%;
+}
+
+#next{
+    top:50%;
+    right: 25%;
+}
+
+.balls div:hover{
+    background: #fff;
+}
+
+.imgAtual{
+    transition: all 0.5s;
+    background: #fff;
+}
+
+.headline{
+    flex:45%;
+    margin-right: 5%;
+    margin-bottom: 90px;
+    margin-left: 15px;
+}
+
+.banner1 img{
+  border-radius: 15px;
+  border: 2px solid #fff;
+}
+
+.headline p{
+    color:#fff;
+}
+
+.section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-dest{
+    display: block;
+    margin-left: 4%;
+    margin-top: 50px;
+    height: 700px;
+}
+
+.item-dest a{
+    color:#fff;
+    font-family: 'Oswald', sans-serif;    
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+.item-dest img{
+    margin-left: 30px;
+}
+
+.dest-jogos img{
+    margin-top: 10px;
+    height: 200px;
+    width: 145px;
+    margin-left: 30px;
+    margin-right: 30px;
+    /* border: 1px solid red; */
+    border-radius: 15px;
+}
+
+@media screen and (min-width: 50px){
+    #main {min-width: 570px;}
+}
+
+.dest-jogos img:hover{
+    cursor: pointer;
+    border: 3px solid #ffff;
+    opacity: 0.5;
+}
+
+.item-promo{
+    margin-top: 15px;
+}
+
+.item-promo a{
+    color:#fff;
+    font-family: 'Oswald', sans-serif;    
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+.promo-jogos img{
+    margin-left: 30px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.item-promo img{
+    position: absolute;
+    right: 1040px;
+    bottom: -580px;
+
+}
+
+.container {
+    display: flex;
+  }
+
+  .card {
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding: 16px;
+    overflow: hidden;
+    transform: translate(0);
+    margin: 16px;
+    transition: 0.25s;
+  }
+
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .card::before {
+    content: "";
+    position: absolute;
+    top: -64px;
+    left: -64px;
+    width: 150%;
+    height: 76%;
+    transform: rotate(-12deg);
+    z-index: -1;
+  }
+  .card.card-farcry6::before {
+    background: linear-gradient(170deg, #dd0909, #f1850a);
+  }
+
+  .card .logo {
+    height: 130px;
+  }
+
+  .card h2 {
+    font-family: "Myriad Bold Italic";
+    font-size: 25px;
+    text-transform: uppercase;
+    line-height: 25px;
+    color: #ffffff;
+    margin: 0;
+    margin-top: 12px;
+
+  }
+
+  .card .price {
+    text-align: right;
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
+
+  }
+  .card .price :is(h6, h4) {
+    font-family: "Myriad Bold";
+    color: #ffffff;
+    margin: 0;
+  }
+  .card .price h6 {
+    color: #a3a3a3;
+    font-size: 12px;
+    text-decoration: line-through;
+  }
+  .card .price h4 {
+    font-size: 24px;
+    margin-top: -4px;
+  }
+  .card.card-farcry6 .price h4 {
+    background: linear-gradient(170deg,  #dd0909, #f1850a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card .button-right {
+    text-align: right;
+    margin-top: 64px;
+  }
+  .card button {
+    font-family: "Myriad Semibold";
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 8px 32px;
+    border: none;
+    border-radius: 48px;
+    cursor: pointer;
+    transition: all 0.1s;
+  }
+  .card.card-farcry6 button {
+    background: linear-gradient(170deg,  #dd0909, #f1850a);
+  }
+
+  .card.card-subnautica::before {
+    background: linear-gradient(170deg, #0762eb, #01184b);
+  }
+
+  .card.card-subnautica .price h4 {
+    background: linear-gradient(170deg,  #0762eb, #01184b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card.card-subnautica button {
+    background: linear-gradient(170deg,  #0762eb, #01184b);
+  }
+
+  .card.card-gtav::before {
+    background: linear-gradient(170deg, #00ff00, #103d0c);
+  }
+
+  .card.card-gtav .price h4 {
+    background: linear-gradient(170deg,    #00ff00, #103d0c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card.card-gtav button {
+    background: linear-gradient(170deg,    #00ff00, #103d0c);
+  }
+
+
+  .card.card-dbd::before {
+    background: linear-gradient(170deg, #bb662d, #606c7c);
+  }
+
+  .card.card-dbd .price h4 {
+    background: linear-gradient(170deg,   #bb662d, #606c7c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card.card-dbd button {
+    background: linear-gradient(170deg,   #bb662d, #606c7c);
+  }
+
+  .card.card-detroid::before {
+    background: linear-gradient(170deg, #00a2ff, #2a5185);
+  }
+
+  .card.card-detroid .price h4 {
+    background: linear-gradient(170deg, #00a2ff, #2a5185);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card.card-detroid button {
+    background: linear-gradient(170deg,  #00a2ff, #2a5185);
+  }
+
+  .JogosGratis{
+    margin-left: 60px;
+  }
+
+  .JogosGratis a{
+    color:#fff;
+    font-family: 'Oswald', sans-serif;    
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 18px;
+  }
+
+  .JogosGratis img{
+    position: absolute;
+    right: 1090px;
+    bottom: -1039px;
+  }
+
+  .JogosGratu{
+    margin-left: 75px;
+  }
+
+  .JogosGratu img{
+    margin-top: 10px;
+    height: 200px;
+    width: 145px;
+    margin-left: 4px;
+    margin-right: 55px;
+    /* border: 1px solid red; */
+    border-radius: 15px;
+  }
+
+  .JogosGratu img:hover{
+    border: 3px solid #ffff;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  footer{
+    border-top: 3px solid #111;
+    display: flex;
+    height: 562px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/backk.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .logo-rodape{
+    flex: 20%;
+    margin-left: 5%;
+  }
+
+  .logo-rodape img{
+    height: 200px;
+    margin-bottom: -228px;
+  }
+
+  .logo-rodape h3{
+    color:#fff;
+    position: absolute;
+    top:2650px;
+    right: 610px;
+    font-family: 'Oswald', sans-serif;    
+    letter-spacing: 1px;
+  }
+  
+  .links-rodape{
+    flex:50%;
+    flex-flow:row wrap;
+    margin-bottom: 210px;
+    
+  }
+
+  .links-rodape a{
+    position: absolute;
+
+    margin-top: 60px;
+    text-align: center;
+    text-decoration: none;
+    color:#fff;
+    font-family: 'Oswald', sans-serif;   
+    font-size: 21px;
+    margin-left: 6%;
+  }
+
+  .txt-rodape{
+    position: absolute;
+    bottom: -1963px;
+  }
+
+  .txt-rodape{
+    font-family: 'Oswald', sans-serif;   
+    letter-spacing: 1px;
+    color:#fff;
+  }
+
+  .txt-rodape h2{
+    position: absolute;
+    top: -350px;
+    left: -340px;
+  }
